@@ -1,8 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--violet);
+  background-image: url(../images/bg-desktop.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 2rem 5rem 0.5rem;
+  color: var(--white);
+  line-height: 1.6;
+}
+
+main {
+  display: flex;
+}
+
+.logo {
+  margin-bottom: 4rem;
+}
+
+.text {
+  padding: 2.5rem 4rem;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  width: 450px;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  width: 460px;
+}
+
+.register {
+  background-color: var(--white);
+  color: var(--violet);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  width: 180px;
+  padding: 0.75rem;
+  border-radius: 30px;
+  border: none;
+  margin: 1.5rem 0;
+}
+
+.register:hover {
+  background-color: var(--soft-magenta);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-self: flex-end;
+}
+
+.icon-border {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-border:hover {
+  border: 1px solid var(--soft-magenta);
+  color: var(--soft-magenta);
+  cursor: pointer;
+}
+
 /* Footer Section */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--white);
+}
+
+.attribution a:hover {
+  color: var(--soft-magenta);
 }
