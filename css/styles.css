@@ -118,7 +118,7 @@ main {
 @media screen and (max-width: 500px) {
   body {
     background-image: url(../images/bg-mobile.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -134,17 +134,28 @@ main {
   }
 
   .logo {
-    text-align: left;
+    width: 50%;
+    height: auto;
+    margin-top: 2rem;
+    left: -1.5rem;
   }
 
+  .image {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .mockup {
+    width: 80%;
+  }
   .text {
     padding: 0;
     text-align: center;
   }
 
   .title {
-    font-size: 2rem;
-    width: 400px;
+    font-size: 1.5rem;
+    width: 300px;
   }
 
   .paragraph {
@@ -153,7 +164,8 @@ main {
   }
 
   .register {
-    width: 200px;
+    width: 220px;
+    padding: 0.5rem;
   }
 
   .social-icons {
