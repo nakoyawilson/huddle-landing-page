@@ -22,7 +22,7 @@ body {
   height: 100vh;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  padding: 2rem 5rem 0.5rem;
+  padding: 2rem 4.5rem 0.5rem;
   color: var(--white);
   line-height: 1.6;
 }
@@ -32,11 +32,17 @@ main {
 }
 
 .logo {
-  margin-bottom: 4rem;
+  position: relative;
+  left: -0.5rem;
+  margin-bottom: 5rem;
+}
+
+.mockup {
+  width: 100%;
 }
 
 .text {
-  padding: 2.5rem 4rem;
+  padding: 2.5rem 4rem 2rem;
 }
 
 .title {
@@ -106,4 +112,56 @@ main {
 
 .attribution a:hover {
   color: var(--soft-magenta);
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: auto;
+  }
+
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  .text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+    width: 400px;
+  }
+
+  .paragraph {
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .register {
+    width: 200px;
+  }
+
+  .social-icons {
+    margin-top: 3rem;
+    align-self: center;
+  }
+
+  .attribution {
+    margin-top: 2rem;
+  }
 }
