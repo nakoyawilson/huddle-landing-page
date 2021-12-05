@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-using-flexbox-bfTNcz8mM](https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-using-flexbox-bfTNcz8mM)
 - Live Site URL: [https://nakoyawilson.github.io/huddle-landing-page/](https://nakoyawilson.github.io/huddle-landing-page/)
 
 ## My process
