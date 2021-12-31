@@ -17,16 +17,20 @@ body {
   background-color: var(--violet);
   background-image: url(../images/bg-desktop.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.6;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  min-height: 100vh;
   padding: 2rem 4.5rem 0.5rem;
-  color: var(--white);
-  line-height: 1.6;
+  width: min(100%, 1440px);
 }
 
 main {
@@ -40,7 +44,7 @@ main {
 }
 
 .mockup {
-  width: 100%;
+  width: min(90%, 709px);
 }
 
 .text {
@@ -117,13 +121,18 @@ main {
 }
 
 /* Media Queries */
-@media screen and (max-width: 500px) {
-  body {
-    background-image: url(../images/bg-mobile.svg);
+@media screen and (max-width: 1300px) {
+  .container {
     justify-content: center;
     align-items: center;
     padding: 0;
     height: auto;
+    width: min(90%, 37.5rem);
+    margin-inline: auto;
+  }
+
+  header {
+    align-self: flex-start;
   }
 
   main {
@@ -134,10 +143,9 @@ main {
   }
 
   .logo {
-    width: 50%;
-    height: auto;
     margin-top: 2rem;
-    left: -1.5rem;
+    left: 15%;
+    width: min(90%, 264px);
   }
 
   .image {
@@ -155,16 +163,17 @@ main {
 
   .title {
     font-size: 1.5rem;
-    width: 300px;
+    width: min(90%, 300px);
+    margin-inline: auto;
   }
 
   .paragraph {
     margin: 0 auto;
-    width: 300px;
+    width: min(90%, 300px);
   }
 
   .register {
-    width: 220px;
+    width: min(90%, 220px);
     padding: 0.5rem;
   }
 
@@ -175,5 +184,23 @@ main {
 
   .attribution {
     margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .logo {
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: auto;
   }
 }
