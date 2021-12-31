@@ -145,7 +145,7 @@ main {
   .logo {
     margin-top: 2rem;
     left: 15%;
-    width: min(90%, 264px);
+    width: min(60%, 264px);
   }
 
   .image {
