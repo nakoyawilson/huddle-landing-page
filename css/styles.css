@@ -20,6 +20,7 @@ body {
   background-image: url("../images/bg-desktop.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: -1rem;
   font-family: var(--font-primary);
   font-weight: 400;
   color: var(--white);
